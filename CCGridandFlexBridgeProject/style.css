@@ -2,9 +2,9 @@
     display:grid;
     
     grid-template: columns: repeat(2, 1fr);
-    grid-template-rows: 75px 65px 350px;
+    grid-template-rows: 75px 65px 400px;
     margin: 2rem auto;
-    max-width: 1000px;
+    max-width: 1500px;
     width: 90%;
 }
 
@@ -16,14 +16,20 @@ header {
     font-size: small;
     background-color: pink;
 }
-a{color:white}
+a {
+    color: white;
+    text-decoration:none;
+    padding-right:10px;
+}
       
 nav    {
     grid-column: 1 / span 2;
     grid-row: 2 / span 1;
     background-color: darkred;
     display:flex;
-    padding-left: 
+    justify-content:space-between;
+    padding-left: 10px;
+    
     
     <nav="w3-bar w3-black"> <a href="#" class="w3-bar-item w3-button">Home</a> <a href="#" class="w3-bar-item w3-button">Link 1</a> <a href="#" class="w3-bar-item w3-button">Link 2</a> <a href="#" class="w3-bar-item w3-button">Link 3</a> </div>
 }
@@ -32,110 +38,20 @@ ul     {
     
 }
 
-main  {
+main {
     grid-column: 1 / span 2;
     grid-row: 3;
-    display:flex;
-    justify-content:initial;
-}
-
-/*//Carousel//*/
-/*img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-}*/
-
-.carousel-wrapper {
-    height: 250px;
-    position: relative;
-    width: 520px;
-    margin: 0 auto;
-    display:inline-flex;
-
-}
-
-.carousel-item {
-    position:absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 100px;
-    padding: 25px 50px;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-}
-
-.arrow {
-    position: absolute;
-    top: 0;
-    display: block;
-    width: 50px;
-    height: 100%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
-}
-
-.arrow-prev {
-    left: 0;
-}
-
-.arrow-next {
-    right: 0;
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-
-.light {
-    color: white;
-}
-
-@media (max-width: 480px) {
-    .arrow, .light .arrow {
-        background-size: 10px;
-        background-position: 10px 50%;
-    }
-}
-
-}
-
-/*Select every element*/
-[id^="item"] {
-    display: none;
-}
-
-.item-1 {
-    z-index: 2;
-    opacity: 1;
-    background-image: url('images/image1.jpg');
-    /*background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');*/
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    background-image: url('images/image4.jpg');
     background-size: cover;
+    
+}
+#video{
+    margin-right:30px;
 }
 
-.item-2 {
-    /**/ background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
-    background-image: url('images/image2.png');
-    background-size: cover;
-}
 
-.item-3 {
-    background-image: url('images/image3.jpg');
-    /*background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');*/
-    background-size: cover;
-}
-
-*:target ~ .item-1 {
-    opacity: 0;
-}
-
-#item-1:target ~ .item-1 {
-    opacity: 1;
-}
-
-#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
-    z-index: 3;
-    opacity: 1;
-}
 
 
