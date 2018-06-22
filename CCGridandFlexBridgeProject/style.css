@@ -2,7 +2,7 @@
     display:grid;
     
     grid-template: columns: repeat(2, 1fr);
-    grid-template-rows: 75px 65px 400px;
+    grid-template-rows: 75px 65px 350px;
     margin: 2rem auto;
     max-width: 1000px;
     width: 90%;
@@ -35,20 +35,29 @@ ul     {
 main  {
     grid-column: 1 / span 2;
     grid-row: 3;
-    display:inline-flex;
+    display:flex;
+    justify-content:initial;
 }
 
 /*//Carousel//*/
+/*img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}*/
 
 .carousel-wrapper {
-    height: 400px;
+    height: 250px;
     position: relative;
-    width: 800px;
+    width: 520px;
     margin: 0 auto;
+    display:inline-flex;
+
 }
 
 .carousel-item {
-    position: absolute;
+    position:absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -99,17 +108,20 @@ main  {
 .item-1 {
     z-index: 2;
     opacity: 1;
-    background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-image: url('images/image1.jpg');
+    /*background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');*/
     background-size: cover;
 }
 
 .item-2 {
-    background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    /**/ background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-image: url('images/image2.png');
     background-size: cover;
 }
 
 .item-3 {
-    background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-image: url('images/image3.jpg');
+    /*background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');*/
     background-size: cover;
 }
 
